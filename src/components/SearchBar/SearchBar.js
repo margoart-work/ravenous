@@ -1,6 +1,6 @@
 import React from 'react';
 import './SearchBar.css.css';
-import BusinessList from "../BusinessList/BusinessList";
+import  BusinessList  from "../BusinessList/BusinessList";
 
 const sortByOptions = {
     'Best Match': 'best_match',
