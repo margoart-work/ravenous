@@ -1,5 +1,5 @@
 import React from 'react';
-import './SearchBar.css.css';
+import './SearchBar.css';
 import  BusinessList  from "../BusinessList/BusinessList";
 
 const sortByOptions = {
@@ -11,10 +11,10 @@ const sortByOptions = {
 
 class SearchBar extends React.Component {
     renderSortByOptions() {
-        return Object.key(sortByOptions).map(sortByOption => {
+        return Object.keys(sortByOptions).map(sortByOption => {
             let sortByOptionValue = sortByOptions[sortByOption];
             return <li key={sortByOptionValue}>{sortByOption}</li>;
-        };
+        });
     }
 
     render() {
